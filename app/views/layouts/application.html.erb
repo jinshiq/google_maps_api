@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GeocoderMaps</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSJyn-HVfHMF5RjANxlSfqZknH8KULxrw&callback=initMap" async defer></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+		    <div class="navbar-header">
+		        <%= link_to 'GoogleMaps Example', root_path, class: 'navbar-brand' %>
+		    </div>
+			<ul class="nav navbar-nav">
+				<li><%= link_to 'About', about_path %></li>
+				<li><%= link_to 'Add Place', new_place_path %></li>
+				<li><%= link_to 'Measure Distance', new_distance_path %></li>
+				<li><%= link_to 'Search Places', searches_path %></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<%= yield %>
+	</div>
+	
+	<br><br>
+		
+	<% flash.each do |name, msg| %>
+	  <%= content_tag(:div, msg.html_safe, class: "alert alert-#{name}") %>
+	<% end %>
+
+
+</body>
+</html>

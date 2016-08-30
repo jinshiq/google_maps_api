@@ -1,0 +1,19 @@
+<header><h2 class="display-4">Search Places</h2></header>
+
+<div class="aa">
+<%= form_tag search_path do %>
+	<p>
+		<%= label_tag 'within', "within" %>
+		<%= text_field_tag 'within1' %>
+	</p>
+	
+	<p>
+		<%= label_tag 'of', 'of' %>
+		<%= text_field_tag 'of1' %>
+	</p>
+	
+	<p>
+		<%= submit_tag 'Go!', class: 'btn btn-primary' %>
+	</p>
+<% end %>
+</div>
