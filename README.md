@@ -9,7 +9,6 @@ Rails version: 4.2.5.1
 
 ##Overview
 
-This is an example to show how to use <b>Geocoder</b> and <b>Gmaps4rails</b> gems in rails. 
-These two gems help us easily search places and diplay search results on maps via Google Maps API.
+This is an example to show how to use <b>[Geocoder](https://github.com/alexreisner/geocoder)</b> and <b>[Gmaps4rails](https://github.com/apneadiving/Google-Maps-for-Rails)</b> gems in rails. 
+These two gems help us easily search places and diplay search results on maps via <b>Google Maps API</b>.
 
-The <b>demo</b> is available <b>[here at heroku](https://aqueous-ocean-76425.herokuapp.com/)</b>.
